@@ -7,7 +7,7 @@ letras sem acentos (á em a,  É em E,  u em u,  Ç em C,  etc.) e devolva a cad
 
 #include <string>
 #include <iostream>
-include namespace std
+using namespace std
 
 string accents_to_noaccents(string x) {
   string normal; 
