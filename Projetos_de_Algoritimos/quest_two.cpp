@@ -1,6 +1,6 @@
 /*
-Alfredo Gabriel
-Marcus Marciel
+Alfredo Gabriel de Sousa Oliveira;
+Marcus Maciel Oliveira;
 Questão 2 (0.3 pt):
 Escreva uma função que recebe uma cadeia de caracteres s e t e decida se s é um segmento de t.
 Também escreva uma função para contar o número de ocorrências da cadeia de caracteres s em t.
