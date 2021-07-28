@@ -1,6 +1,6 @@
 /*
 Alfredo Gabriel de Sousa Oliveira
-Marcus Marciel Oliveira
+Marcus Maciel Oliveira
 Escreva uma função que receba uma cadeia, converta todas as letras acentuadas nas correspondentes
 letras sem acentos (á em a,  É em E,  u em u,  Ç em C,  etc.) e devolva a cadeia resultante. 
 */
