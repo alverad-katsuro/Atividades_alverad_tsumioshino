@@ -7,9 +7,10 @@ letras sem acentos (á em a,  É em E,  u em u,  Ç em C,  etc.) e devolva a cad
 
 #include <string>
 #include <iostream>
+include namespace std
 
-std::string convert_string_without_esp(std::string x) {
-  std::string normal;
+string accents_to_noaccents(string x) {
+  string normal; 
   char cond = 'T';
   for(int i = 0; i < x.length(); i++) { 
     int c = (int)x[i]; 
@@ -76,9 +77,9 @@ std::string convert_string_without_esp(std::string x) {
   return normal;
 }
 int main() {
-  std::cout << "Digite a cadeia de caracteres que você quer converter: " << std::endl;
-  std::string word;
+  cout << "Digite a cadeia de caracteres que você quer converter: " << endl;
+  string word;
   getline(std::cin, word); 
-  std::cout << convert_string_without_esp(word) << std::endl;
+  cout << accents_to_noaccents(word) << endl;
   return 0;
 }
