@@ -6,7 +6,7 @@ using namespace std;
 
 /*
 Alfredo Gabriel de Sousa Oliveira
-Marcus Marciel Oliveira
+Marcus Maciel Oliveira
 Escreva uma função em C que retorna verdadeiro se uma cadeia de caracteres enviada como parâmetro é um palíndromo. 
 Um palíndromo é uma cadeia que é igual à sua inversa.
 */
