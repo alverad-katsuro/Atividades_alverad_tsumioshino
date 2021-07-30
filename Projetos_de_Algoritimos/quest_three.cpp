@@ -11,11 +11,11 @@ using namespace std;
 
 string accents_to_noaccents(string x) {
   string normal; 
-  char cond = 'T';
+  bool cond = true;
   for(int i = 0; i < x.length(); i++) { 
     int c = (int)x[i]; 
     if (c == -61) {
-      cond = 'F';
+      cond = false;
       int d = (int)x[i+1];
       if ((d > -129) && (d < -122)) {
         normal += 'A';
@@ -47,7 +47,7 @@ string accents_to_noaccents(string x) {
       else if ((d > -72) && (d < -67)) {
         normal += 'u';
       }
-      else if (d == 121) {
+      else if (d == -121) {
         normal += 'C';
       } 
       else if (d == -89) {
@@ -62,14 +62,14 @@ string accents_to_noaccents(string x) {
       else if (d == -99) {
         normal += 'Y';
       }
-      else if ((d == 67) || (d == 65)) {
+      else if ((d == -67) || (d == -65)) {
         normal += 'y';
       }
   
       continue;
     }
-    if (cond == 'F') {
-      cond = 'T';
+    if (cond == false) {
+      cond = true;
       continue;
     }
     normal += x[i];
@@ -79,7 +79,7 @@ string accents_to_noaccents(string x) {
 int main() {
   cout << "Digite a cadeia de caracteres que você quer converter: " << endl;
   string word;
-  getline(std::cin, word); 
+  getline(cin, word); 
   cout << accents_to_noaccents(word) << endl;
   return 0;
 }
